@@ -2,7 +2,12 @@
 
 Creating an AI-powered tool to analyze code snippets for performance bottlenecks and provide optimization suggestions is a multi-faceted project. Below, I will outline a high-level plan for building this tool, including the necessary components, design choices, and a sample README file. However, please note that I cannot create a GitHub repository or upload files directly. Instead, I will guide you through the process.
 
-Project Structure
+Project Structure-
+
+
+
+
+
 Frontend: A simple web interface for users to upload code snippets.
 
 
@@ -13,7 +18,7 @@ Backend: A server that processes the code snippets, analyzes them for performanc
 Analysis Engine: A module that uses static analysis techniques to identify bottlenecks and suggest optimizations.
 
 
-Technology Stack
+Technology Stack-
 
 
 Frontend: HTML, CSS, JavaScript (React or Vanilla JS)
@@ -28,7 +33,7 @@ Analysis Engine: Python (using libraries like ast for static analysis)
 
 
 
-Design Choices
+Design Choices-
 
 
 Frontend: A simple HTML form was chosen for ease of use.
