@@ -1,0 +1,35 @@
+//Create a simple HTML form to upload code snippets.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Performance Analyzer</title>
+</head>
+<body>
+    <h1>Code Performance Analyzer</h1>
+    <form id="codeForm">
+        <textarea id="codeSnippet" rows="10" cols="50" placeholder="Paste your code here..."></textarea><br>
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('codeForm').onsubmit = async function(event) {
+            event.preventDefault();
+            const code = document.getElementById('codeSnippet').value;
+            const response = await fetch('/analyze', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code })
+            });
+            const result = await response.json();
+            document.getElementById('results').innerText = JSON.stringify(result, null, 2);
+        };
+    </script>
+</body>
+</html>
