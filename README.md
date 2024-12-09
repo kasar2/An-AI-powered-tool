@@ -48,3 +48,7 @@ Backend: Flask was selected for its simplicity and ease of integration with Pyth
 
 
 Analysis: A basic static analysis using Python's ast module was implemented for
+
+
+![image](https://github.com/user-attachments/assets/87812d23-b22a-4d80-b11a-49ac7c04e164)
+
